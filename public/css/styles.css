@@ -1,0 +1,272 @@
+.main {
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* background-color: #E8ECEF; */
+    /* position: relative; */
+}
+
+
+/* NAVBAR STARTS HERE */
+
+.navbar {
+    /* background-color: #dbeaf6 !important; */
+    background-color: #2051E9 !important;
+}
+
+.navbar-light {
+    transition: 0.85s ease-in-out;
+    padding-top: 10px;
+    padding-left: 8%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 1.600em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light.scrolled {
+    background-color: #2051E9 !important;
+    /* background-color: #f0eeee !important; */
+    /* background-color: #dfd6d6 !important; */
+    /* background-color: #c9c9c9 !important; */
+}
+
+.navbar-light .navbar-brand :hover {
+    /* color: #0a0808; */
+    color: black;
+    /* color:  rgb(23, 99, 185) !important;  */
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    /* color: #343434; */
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    /* color: #343434; */
+    color: white;
+    /* text-shadow: 2.0px 2.0px 2.0px#343434; */
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 20px; */
+    font-size: 1.250em;
+    font-weight: 1000;
+}
+
+.nav-item {
+    /* margin: 10px 15px 5px; */
+    margin: 5px 5px 5px 5px;
+}
+
+.navbar-light .navbar-brand .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    /* color:#0a0808 !important; */
+    color: black !important;
+}
+
+
+/* FORM EFFECTS STARTS HERE */
+
+.card {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.btn {
+    background: #2051E9;
+    background-image: -webkit-linear-gradient(top, #2051E9, #2c60fa);
+    background-image: -moz-linear-gradient(top, #2051E9, #2c60fa);
+    background-image: -ms-linear-gradient(top, #2051E9, #2c60fa);
+    background-image: -o-linear-gradient(top, #2051E9, #2c60fa);
+    background-image: linear-gradient(to bottom, #2051E9, #2c60fa);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 8px;
+    font-family: Monospace;
+    color: #0f0d0d;
+    /* font-size: 25px; */
+    font-size: 1.290em;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    /* box-shadow: 1px 1px 20px 0px #2e93d6; */
+}
+
+.btn:hover {
+    background: #343434;
+    background-image: -webkit-linear-gradient(top, #343434, #343434);
+    background-image: -moz-linear-gradient(top, #343434, #343434);
+    background-image: -ms-linear-gradient(top, #343434, #343434);
+    background-image: -o-linear-gradient(top, #343434, #343434);
+    background-image: linear-gradient(to bottom, #343434, #343434);
+}
+
+
+/* FORM EFFECTS ENDS HERE */
+
+
+/* GET INVOLVED DROPDOWN SECTION STARTS HERE */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    /* background: transparent; */
+    /* background-color: #c9c9c9 !important; */
+    /* display: none; */
+    /* background-color: #f0eeee !important; */
+    /* border-color: #f0eeee; */
+    background-color: #dbeaf6 !important;
+    border-color: #dbeaf6;
+}
+
+
+/* .dropdown-menu a:hover {
+    background-color: #ddd;
+} */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-margin {
+    margin-bottom: 3px;
+    /* margin-top: -10px; */
+    /* margin-left: 5px; */
+    /* margin-right: -5px; */
+    /* text-align: center; */
+}
+
+.drp:nth-child(1) {
+    /* animation: animate 300ms ease-in-out forwards; */
+    animation-name: animate;
+    animation-delay: -150ms;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+}
+
+.drp:nth-child(2) {
+    /* animation: animate 300ms ease-in-out forwards; */
+    animation-name: animate;
+    animation-delay: 0ms;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+}
+
+.drp:nth-child(3) {
+    /* animation: animate 300ms ease-in-out forwards; */
+    animation-name: animate;
+    animation-delay: 150ms;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+}
+
+.drp:nth-child(4) {
+    /* animation: animate 300ms ease-in-out forwards; */
+    animation-name: animate;
+    animation-delay: 300ms;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+}
+
+.drp:nth-child(5) {
+    /* animation: animate 300ms ease-in-out forwards; */
+    animation-name: animate;
+    animation-delay: 450ms;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    70% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    /* 0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    } */
+}
+
+
+/* GET INVOLVED DROPDOWN SECTION ENDS HERE */
+
+
+/* NAVBAR ENDS HERE */
+
+
+/* FOOTER STARTS HERE */
+
+.footer {
+    background-color: #2051E9;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* margin-top: 50px; */
+    /* color: white; */
+    text-align: center;
+}
+
+a {
+    /* color: #11999E; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05em;
+    /* margin: 10px 20px; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+a:hover.links {
+    color: burlywood;
+}
+
+.copyright {
+    /* color: #EAF6F6; */
+    color: white;
+    font-size: 1.05rem;
+    padding: 20px 0;
+}
+
+.footer-link {
+    padding-left: 10px;
+}
+
+
+/* FOOTER ENDS HERE */
