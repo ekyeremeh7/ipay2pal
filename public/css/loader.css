@@ -1,11 +1,12 @@
 /* LOADER 1 */
+
 .loader {
     height: 50px;
-    transform-origin: bottom center;
+    transform-origin: center;
     animation: rotate 3s linear infinite;
-  }
-  
-  .circle {
+}
+
+.circle {
     display: inline-block;
     background-color: purple;
     height: 40px;
@@ -14,21 +15,21 @@
     transform: scale(0);
     animation: grow 1.5s linear infinite;
     margin: -10px;
-  }
-  
-  .circle:nth-child(2) {
+}
+
+.circle:nth-child(2) {
     background-color: palevioletred;
     animation-delay: 0.75s;
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  @keyframes grow {
+}
+
+@keyframes grow {
     50% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
