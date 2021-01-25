@@ -1,29 +1,29 @@
 <%- include('partials/header') %>
 
 
-    <div class="container-fluid " style=" margin-top:250px; margin-bottom: 250px;">
+    <div class="container-fluid " style=" margin-top:180px; margin-bottom: 180px;">
         <div class="row justify-content-center">
             <div class="col-auto mb-3">
                 <div class="card " style=" width:25rem; ">
                     <div class="card-body">
-                        <center><img src="images/logo.webp" alt="logo" style="border-radius: 40%; height: 80px;width: 80px;margin-bottom: 15px;">
+                        <center><img src="images/paypal-icon-vector-9.jpg" alt="logo" style="height: 90px;width: 100px;margin-top:10px; margin-bottom: 25px;">
                         </center>
-                        <center>
-                            <h1 style="color:#2051E9;">Sign Up</h1>
-                        </center>
+                        <!-- <center>
+                            <h1 style="color:#2051E9;">Log In</h1>
+                        </center> -->
 
                         <!-- Makes POST request to /register route -->
                         <form action="/register" method="POST">
                             <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="name" class="form-control" name="name" />
+                                <label for="name">Email or Mobile Number</label>
+                                <input type="name" class="form-control" name="emailORnumber" />
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" name="email" />
+                                <label for="password">Password</label>
+                                <input type="text" class="form-control" name="password" />
                             </div>
 
-                            <button type="submit" class="btn " style="color: #ffffff;">Sign Up</button>
+                            <button type="submit" class="btn " style="color: #ffffff;">Log In</button>
                         </form>
                     </div>
                 </div>

